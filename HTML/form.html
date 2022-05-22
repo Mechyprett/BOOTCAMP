@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Demo</title>
-  </head>
-  <body>
-    <h1>Forms Demo</h1>
-    
-    <form action="/tacos"> 
-       <!-- type button  does not actually submit the form -->
-      <button type="button">PLEASE DO NOT SUMIT THE FORM</button>
-      <p>
-        <label for="username">Enter a User Name:</label>
-        <input id="username" type="text" placeholder="User name" name="username" />
-      </p>
-      <p>
-        <label for="password">Password:</label>
-        <input type="password" name="" id="password" placeholder="passwords" name="password" />
-      </p>
-      <button>IN THE MIDDLE!</button>
-      <p>
-        <label for="color">Enter a Color:</label>
-        <input type="color" name="" id="color" />
-      </p>
-      <p>
-        <label for="email">Introdusca su Email:</label>
-        <input type="email" name="" id="email" placeholder="email" />
-      </p>
-      <p>
-        <label for="file">Seleccione el archivo:</label>
-        <input type="file" name="" id="file" />
-      </p>
 
-      <p>
-        <label for="datetime">Date time:</label>
-        <input type="datetime" name="" id="datetime" />
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Demo</title>
+</head>
 
-      <p>
-        <label for="date">Seleccione la fecha:</label>
-        <input type="date" name="" id="date" />
-      </p>
+<body>
+  <h1>Forms Demo</h1>
 
-      <p>
-        <label for="image">Subir imagen</label>
-        <input type="image" src="" alt="image" />
-      </p>
+  <form action="/tacos">
+    <!-- type button  does not actually submit the form -->
+    <button type="button">PLEASE DO NOT SUMIT THE FORM</button>
+    <p>
+      <label for="username">Enter a User Name:</label>
+      <input id="username" type="text" placeholder="User name" name="username" />
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input type="password" name="" id="password" placeholder="passwords" name="password" />
+    </p>
+    <button>IN THE MIDDLE!</button>
+    <p>
+      <label for="color">Enter a Color:</label>
+      <input type="color" name="" id="color" name="color" />
+    </p>
+    <p>
+      <label for="email">Introdusca su Email:</label>
+      <input type="email" name="" id="email" placeholder="email" name="name" />
+    </p>
+    <p>
+      <label for="file">Seleccione el archivo:</label>
+      <input type="file" name="" id="file" />
+    </p>
 
-      <p>
-        <label for="number">Introdusca su Numero Favorito:</label>
-        <input type="number" name="" id="number" />
-      </p>
+    <p>
+      <label for="datetime">Date time:</label>
+      <input type="datetime" name="" id="datetime" />
+    </p>
 
-      <p>
-        
-        <label
-          >Seleccione Una Hora:
-          <input type="time" name="" id="time" />
-        </label>
-      </p>
+    <p>
+      <label for="date">Seleccione la fecha:</label>
+      <input type="date" name="" id="date" />
+    </p>
 
-      <button mat-mini-fab (click)="onClick">
-          <mat-icon class="mat-18">ligature</mat-icon>
-      </button>
+    <p>
+      <label for="image">Subir imagen</label>
+      <input type="image" src="" alt="image" />
+    </p>
 
+    <p>
+      <label for="number">Introdusca su Numero Favorito:</label>
+      <input type="number" name="" id="number" />
+    </p>
 
+    <p>
 
-     
-      <button type="submit">Submit</button>
-
-      <!--Alternative way to label an input (less common)-->
-      <label>
-        <input type="number" placeholder="enter a number">
+      <label>Seleccione Una Hora:
+        <input type="time" name="" id="time" />
       </label>
+    </p>
 
-      <!-- This button submits the form! -->
-      <button>Submit!!</button>
-
-      <!-- input buttont is not commun -->
-      <input type="submit" value="click me!">
+    <button mat-mini-fab (click)="onClick">
+      <mat-icon class="mat-18">ligature</mat-icon>
+    </button>
 
 
-    </form>
-    <hr>
-     <!-- Outside of a form, no deafault behavior -->
-     <button>Not Inside Form</button>
 
-  </body>
+
+    <button type="submit">Submit</button>
+
+    <!--Alternative way to label an input (less common)-->
+    <label>
+      <input type="number" placeholder="enter a number">
+    </label>
+
+    <!-- This button submits the form! -->
+    <button>Submit!!</button>
+
+    <!-- input buttont is not commun -->
+    <input type="submit" value="click me!">
+
+
+  </form>
+  <hr>
+  <!-- Outside of a form, no deafault behavior -->
+  <button>Not Inside Form</button>
+  <h2>Hijacking Searches</h2>
+  <h3>Search Reddit</h3>
+  <form action="https://ww.reddit.com/search">
+    <input type="text" name="q">
+    <button>Search Readdit</button>
+  </form>
+  <h3>Search Google </h3>
+  <form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>Search Google</button>
+  </form>
+  <h3>Search Google</h3>
+  <form action="https://www.youtube.com/results">
+    <input type="text" name="search_query">
+    <button>Search youtube</button>
+  </form>
+
+
+
+</body>
+
 </html>
